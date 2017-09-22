@@ -1,19 +1,27 @@
 //Business Logic
-var inputValue = parseInt($("input#number").val());
-var businessLogicTotal = [];
+//var businessLogicArray = [];
+  //for (i = 0; i <= 10; i++) {
+    //function getArray() {
+      //return i;
+    //}
+    //return (businessLogicArray + "," + i);
+    //alert(getArray);
+    //}
+      //businessLogicTotal = businessLogicTotal + "" + index + ",";
+      //alert(businessLogicTotal);
 
-  for(var index = 0; index < inputValue; index += 1) {
-      businessLogicTotal = businessLogicTotal + "" + index + ",";
-      alert(businessLogicTotal);
-  }
 
 //User Interface Logic
 $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
     event.preventDefault();
 
-    var finalResult = businessLogicTotal(inputValue);
-    text(finalResult);
+    var inputValue = parseInt($("input#number").val());
+    var finalResult = calculateBusinessLogicTotal(inputValue);
+
+    return (finalResult);
+    alert(finalResult);
+
     $(".result-display").show();
     //$("div.form-group").hide();
 
