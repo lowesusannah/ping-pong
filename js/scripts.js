@@ -1,14 +1,15 @@
 //Business Logic
-var businessLogicArray = [];
+var array = [];
 var getArray = function(array) {
-  return businessLogicArray
-}
-
-  for (var i = 0; i <= 10; i++) {
-    function getArray() {
-      return businessLogicArray + "," + [i];
+  var total = 0;
+    for (var index = 1; index <= 10; index ++) {
+      array += index + 1 + ","
     }
+    return (array);
   }
+    //getArray() {
+      //console.log();
+  //}
     //return (businessLogicArray + "," + i);
     //alert(getArray);
     //}
