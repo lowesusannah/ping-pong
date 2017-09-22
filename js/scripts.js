@@ -1,10 +1,10 @@
 //Business Logic
 //var businessLogicTotal = [];
 
-  //for(var index = 0; index < inputValue; index += 1) {
-    //console.log(index, inputValue); alert(index);
+  for(var index = 0; index < 10; index += 1) {
+    alert(index);
     //businessLogicTotal = .append(i);
-  //}
+  }
 
 //User Interface Logic
 $(document).ready(function() {
@@ -12,11 +12,11 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputValue = parseInt($("input#number").val());
-    alert(inputValue);
+    alert(inputValue)
     //var finalResult = $('Your result is:' + businessLogicTotal);
 
-    //$(".result-display").show();
+    $(".result-display").show();
     //$("div.form-group").hide();
 
   });
-})
+});
