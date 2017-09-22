@@ -1,9 +1,14 @@
 //Business Logic
-//var businessLogicArray = [];
-  //for (i = 0; i <= 10; i++) {
-    //function getArray() {
-      //return i;
-    //}
+var businessLogicArray = [];
+var getArray = function(array) {
+  return businessLogicArray
+}
+
+  for (var i = 0; i <= 10; i++) {
+    function getArray() {
+      return businessLogicArray + "," + [i];
+    }
+  }
     //return (businessLogicArray + "," + i);
     //alert(getArray);
     //}
@@ -17,12 +22,10 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputValue = parseInt($("input#number").val());
-    var finalResult = calculateBusinessLogicTotal(inputValue);
+    var finalResult = getArray(inputValue);
+    $("#output").text(finalResult);
 
-    return (finalResult);
-    alert(finalResult);
-
-    $(".result-display").show();
+    //$(".result-display").show();
     //$("div.form-group").hide();
 
   });
