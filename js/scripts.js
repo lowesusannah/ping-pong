@@ -1,9 +1,10 @@
 //Business Logic
-//var businessLogicTotal = [];
+var inputValue = parseInt($("input#number").val());
+var businessLogicTotal = [];
 
-  for(var index = 0; index < 10; index += 1) {
-    alert(index);
-    //businessLogicTotal = .append(i);
+  for(var index = 0; index < inputValue; index += 1) {
+      businessLogicTotal = businessLogicTotal + "" + index + ",";
+      alert(businessLogicTotal);
   }
 
 //User Interface Logic
@@ -11,10 +12,8 @@ $(document).ready(function() {
   $("form#ping-pong").submit(function(event) {
     event.preventDefault();
 
-    var inputValue = parseInt($("input#number").val());
-    alert(inputValue)
-    //var finalResult = $('Your result is:' + businessLogicTotal);
-
+    var finalResult = businessLogicTotal(inputValue);
+    text(finalResult);
     $(".result-display").show();
     //$("div.form-group").hide();
 
