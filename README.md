@@ -12,49 +12,49 @@ _This application was a practice exercise for the Epicodus Introduction to Progr
 
 ## Specifications
 * It can count up to the provided number.
-    - Example Input: 2
-    - Example Output: [1, 2]
+    Example Input: 2
+    Example Output: [1, 2]
 
 
 * It can display each number as a list item to the viewer
-    - Example Input: 2
-    - Example Output:
-                      * 1
-                      * 2
+    Example Input: 2
+    Example Output:
+      - 1
+      - 2
 
 * Even numbers will display to user as "ping"
-    - Example Input: 2
-    - Example Output:
-                      * 1
-                      * ping
+    Example Input: 2
+    Example Output:
+        - 1
+        - ping
 
 * Numbers divisible by 3 will display to user as "pong"
-    - Example Input: 3
-    - Example Output:
-                      * 1
-                      * ping
-                      * pong
+    Example Input: 3
+    Example Output:
+        - 1
+        - ping
+        - pong
 
 * Numbers divisible by 6 will display to user as "ping-pong"
-    - Example Input: 6
-    - Example Output:
-                      * 1
-                      * ping
-                      * pong
-                      * 4
-                      * 5
-                      * ping-pong
+    Example Input: 6
+    Example Output:
+        - 1
+        - ping
+        - pong
+        - 4
+        - 5
+        - ping-pong
 
 * It can allow a user to enter a new number and see new results
-      - Example Input: First 3, then 2
-      - Example Output:
-                      First:
-                        * 1
-                        * ping
-                        * pong
-                      Then:
-                        * 1
-                        * ping
+      Example Input: First 3, then 2
+      Example Output:
+          First:
+            - 1
+            - ping
+            - pong
+          Then:
+            - 1
+            - ping
 
 ##  Setup/Installation Requirements
 
