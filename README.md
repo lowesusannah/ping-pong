@@ -11,60 +11,52 @@
 _This application was a practice exercise for the Epicodus Introduction to Programming Course._
 
 ## Specifications
-* _It can count up to the provided number.
+* It can count up to the provided number.
     - Example Input: 2
-    - Example Output: [1, 2]_
+    - Example Output: [1, 2]
 
 
-* _It can display each number as a list item to the viewer
+* It can display each number as a list item to the viewer
     - Example Input: 2
-    - Example Output: *1
-                      *2_
+    - Example Output:
+                      * 1
+                      * 2
 
-* _Numbers divisible by 3 will display to user as "ping"
+* Even numbers will display to user as "ping"
+    - Example Input: 2
+    - Example Output:
+                      * 1
+                      * ping
+
+* Numbers divisible by 3 will display to user as "pong"
     - Example Input: 3
-    - Example Output: *1
-                      *2
-                      *ping_
+    - Example Output:
+                      * 1
+                      * ping
+                      * pong
 
-* _Numbers divisible by 5 will display to user as "pong"
-    - Example Input: 5
-    - Example Output: *1
-                      *2
-                      *ping
-                      *4
-                      *pong_
+* Numbers divisible by 6 will display to user as "ping-pong"
+    - Example Input: 6
+    - Example Output:
+                      * 1
+                      * ping
+                      * pong
+                      * 4
+                      * 5
+                      * ping-pong
 
-* _Numbers divisible by 15 will display to user as "ping-pong"
-    - Example Input: 15
-    - Example Output: *1
-                      *2
-                      *3
-                      *4
-                      *5
-                      *6
-                      *7
-                      *8
-                      *9
-                      *10
-                      *11
-                      *12
-                      *13
-                      *14
-                      *ping-pong_
-
-* _It can allow a user to enter a new number and see new results
+* It can allow a user to enter a new number and see new results
       - Example Input: First 3, then 2
-      - Example Output: First
-                      *1
-                      *2
-                      *ping
+      - Example Output:
+                      First:
+                        * 1
+                        * ping
+                        * pong
+                      Then:
+                        * 1
+                        * ping
 
-                      then
-                      *1
-                      *2_
-
-## Setup/Installation Requirements
+##  Setup/Installation Requirements
 
 * _Clone this directory from GitHub onto your machine_
 * _Navigate to the program using your favorite shell, such as Terminal_
