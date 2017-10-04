@@ -2,12 +2,12 @@
 var getArray = function(input) {
   var outputArr = [];
   for (var index = 1; index <= input; index++) {
-    if (index % 2 === 0) {
-      outputArr.push("ping");
+    if (index % 6 === 0) {
+      outputArr.push("ping-pong");
     } else if (index % 3 === 0) {
       outputArr.push("pong");
-    } else if (index % 6 === 0) {
-      outputArr.push("ping-pong");
+    } else if (index % 2 === 0) {
+      outputArr.push("ping");
     } else {
       outputArr.push(index);
     }
@@ -40,7 +40,11 @@ removed ", " + from before the "ping", "pong" and "ping-pong" because pushing it
 removed the line because if pushing, don't need to join it into a string anymore.
 
 return outputArr;
-moved this line down one line to be below the closing }, because otherwise it is going to stop the loop from looping back again -- anytime it sees "return" within the loop, the for loop will think that it has finished its job and stops looping. Changed from the previously used "joinedArr" used in the deleted line above to outputArr, since that is the name of the array we will want to return -- it has all of our .pushed elements within it.*/
+moved this line down one line to be below the closing }, because otherwise it is going to stop the loop from looping back again -- anytime it sees "return" within the loop, the for loop will think that it has finished its job and stops looping. Changed from the previously used "joinedArr" used in the deleted line above to outputArr, since that is the name of the array we will want to return -- it has all of our .pushed elements within it.
+
+FINAL note -- also needed to change the order of the conditional statement within the for loop -- needed to move 6 to be the first moduleo to be checked over, so that ping-pong correctly displayed for the numbers divisible by 6. 
+
+*/
 
 /*  Comments Front-end Logic
 $("ul#numList").empty();
