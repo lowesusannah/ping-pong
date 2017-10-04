@@ -1,6 +1,6 @@
 # _Ping-Pong_
 
-#### _This is an application which can be used for finding multiples of 3, 5 and 15._
+#### _This is an application which can be used for finding multiples of 2, 3 and 6._
 
 #### _Sept. 22, 2017_
 
